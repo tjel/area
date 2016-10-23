@@ -57,7 +57,7 @@ ls -la
 git status
 git add circle.cpp .gitignore README.md
 git status
-git commit -m 'Initialize area repository.'
+git commit -m 'Initialize area-test repository.'
 git status
 git log
 
@@ -143,7 +143,7 @@ git log
 14. Laczymy lokalne repozytorium ~/triangle-test ze zdalnym https://github.com/XXX/triangle-test
 
 cd ~/triangle-test
-git remote rm origin 
+git remote remove origin 
 git remote add origin https://github.com/XXX/triangle-test.git
 git remote -v
 git push -u origin master
@@ -163,6 +163,8 @@ cd area
 - zmienic typ zmiennej 'rad' na 'double'
 - dopisac 'if' do obslugi r<0; 'Radius has to be a positive real number. Please correct your input.' 
 
+git fetch && git merge
+git pull
 
 ---------------------------------------
 15. Rozgaleziamy projekt area-test
