@@ -65,8 +65,8 @@ git log
 ---------------------------------------
 6. Kompilujemy i testujemy
 
-g++ circle.cc -o circle
-gcc circle.cc -o circle -lstdc++
+g++ circle.cpp -o circle
+gcc circle.cpp -o circle -lstdc++
 ./circle
 
 
