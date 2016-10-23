@@ -1,0 +1,190 @@
+---------------------------------------
+1. Zmieniamy globalne ustawienia gita
+
+git config --global user.email "imie.nazwisko@gmail.com"
+git config --global user.name "imie-nazwisko"
+
+(opcjonalnie)
+git config --global credential.helper "cache --timeout=7200" 
+git config --global credential.helper store
+git config --global core.editor "nano"
+
+git config --list
+
+
+---------------------------------------
+2. Tworzymy katalog ~/area-test
+
+mkdir ~/area-test
+cd ~/area-test
+
+
+---------------------------------------
+3. Dodajemy plik .gitignore i README.md
+
+nano .gitignore
+cat ~/.gitignore
+*.[oa]
+echo "# area-test" >> README.md
+
+
+---------------------------------------
+4. Dodajemy plik circle.cpp
+
+nano circle.cpp
+cat ~/circle.cpp
+# include <iostream>
+
+using namespace std;
+
+int main( ) 
+{ 
+    float PI = 3.14;                // variables can be initialized during declaration 
+    integer rad; 
+    cout<< "Enter the radius"; 
+    cin>>rad; 
+    cout<< "Area of the circle is: "<< PI * rad * rad; 
+    return 0;
+}  
+
+
+---------------------------------------
+5. Inicjalizacja lokalnego repozytorium
+
+ls -la
+git init
+ls -la 
+git status
+git add circle.cpp .gitignore README.md
+git status
+git commit -m 'Initialize area repository.'
+git status
+git log
+
+
+---------------------------------------
+6. Kompilujemy i testujemy
+
+g++ circle.cc -o circle
+gcc circle.cc -o circle -lstdc++
+./circle
+
+
+---------------------------------------
+7. Ulepszyc kod w circle.cpp
+
+- dodac odstep i znak ":" po 'Enter the radius'
+- dodac lamanie lini (<<endl) po wyniku 
+- jednostki?
+- zwiekszyc dokladnosc 'PI'
+
+
+---------------------------------------
+8. GitHub/BitBucket/GitLab
+
+- zakladamy konto
+- dodajemy repozytorium o nazwie area-test
+- sprawdzamy adres repozytorium np. https://github.com/XXX/area-test.git
+
+
+---------------------------------------
+9. Laczymy lokalne repozytorium ~/area-test ze zdalnym github.com/XXX/area-test.git
+
+git remote add origin https://github.com/XXX/area-test.git
+git remote -v
+
+---------------------------------------
+10. Wysylamy zmiany do zdalnego repozytorium
+
+git push -u origin master
+
+---------------------------------------
+11. Sprawdzamy na GitHubie czy zmiany zostaly wyslane
+
+---------------------------------------
+12. Klonujemy repozytorium github.com/tjel/triangle-test
+
+cd
+git clone https://github.com/tjel/triangle-test.git 
+git remote -v
+
+---------------------------------------
+13. Wprowadzamy zmiany w lokalnym repozytorium ~/triangle-test
+
+cd triangle-test
+cat ~/triangle-test.cpp
+# include <iostream>
+
+using namespace std;
+
+int main( ) 
+{ 
+    double a; 
+    double b;
+    double c;
+    cout<< "Enter a"; 
+    cin>>a;
+    cout<< "Enter b"; 
+    cin>>b;
+    cout<< "Enter c"; 
+    cin>>c;
+ 
+    cout<< "Perimeter of the triangle is: "<< a+b+c; 
+    return 0;
+} 
+
+git log
+
+---------------------------------------
+14. Tworzymy na GitHubie zdalne repozytorium https://github.com/XXX/triangle-test
+
+
+---------------------------------------
+14. Laczymy lokalne repozytorium ~/triangle-test ze zdalnym https://github.com/XXX/triangle-test
+
+cd ~/triangle-test
+git remote rm origin 
+git remote add origin https://github.com/XXX/triangle-test.git
+git remote -v
+git push -u origin master
+
+
+---------------------------------------
+15. Klonujemy github.com/tjel/area.git i powtarzamy pkt. 7 
+
+git clone https://github.com/tjel/area.git
+cd area
+
+
+---------------------------------------
+14. Ponownie ulepszamy kod w circle.cpp
+
+- co sie stanie gdy wpiszemy np. rad = -2 albo rad = 2.8
+- zmienic typ zmiennej 'rad' na 'double'
+- dopisac 'if' do obslugi r<0; 'Radius has to be a positive real number. Please correct your input.' 
+
+
+---------------------------------------
+15. Rozgaleziamy projekt area-test
+
+cd ~/area-test
+git branch
+git branch triangle-test
+git branch
+git checkout triangle-test
+ls -la
+git status
+
+
+---------------------------------------
+16. Integrujemy kod z pliku ~/triangle-test/triangle-test.cpp do ~/area-test/area-test.cpp
+
+
+---------------------------------------
+17. Scalamy galezie
+
+git branch
+git checkout master
+git merge
+
+
