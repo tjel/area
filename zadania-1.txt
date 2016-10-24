@@ -187,5 +187,5 @@ git status
 
 git branch
 git checkout master
-git merge
+git merge --no-ff triangle-test
 
