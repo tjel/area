@@ -3,7 +3,6 @@
 
 using namespace std;
 
-<<<<<<< HEAD
 int main( )
 {
     double PI = 3.14159265359;                // variables can be initialized during declaration
