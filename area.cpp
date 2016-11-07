@@ -10,7 +10,7 @@ int main( )
     cin>>rad;
     if (rad < 0) {
         cout << "Radius has to be a positive real number. Please correct your input.";
-    }
-    cout<< "Area of the circle is: "<< PI * rad * rad;
+    } else{
+    cout<< "Area of the circle is: "<< PI * rad * rad;}
     return 0;
 }
