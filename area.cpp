@@ -8,6 +8,14 @@ int main( )
     double rad; 
     cout<< "Enter the radius"<<endl; 
     cin>>rad; 
-    cout<< "Area of the circle is: "<< PI * rad * rad<<endl; 
+    cout<< "Area of the circle is: "<< PI * rad * rad<<endl;
+    if (rad < 0) 
+	{
+        	cout << "Radius has to be a positive real number. Please correct your input.";
+	}
+    else
+	{
+		cout<< "Area of the circle is: "<< PI * rad * rad;
+	}
     return 0;
-}  
+}
