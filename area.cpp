@@ -3,6 +3,7 @@
 
 using namespace std;
 
+<<<<<<< HEAD
 int main( ) 
 { 
     float PI = 3.1415;                // variables can be initialized during declaration 
@@ -17,3 +18,17 @@ int main( )
     		return 0;
 	}
 }  
+=======
+int main( )
+{
+    float PI = 3.14;                // variables can be initialized during declaration
+    double rad;
+    cout<< "Enter the radius";
+    cin>>rad;
+    if (rad < 0) {
+        cout << "Radius has to be a positive real number. Please correct your input.";
+    } else{
+    cout<< "Area of the circle is: "<< PI * rad * rad;}
+    return 0;
+}
+>>>>>>> refs/remotes/origin/master
