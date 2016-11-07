@@ -6,9 +6,14 @@ using namespace std;
 int main( ) 
 { 
     float PI = 3.1415;                // variables can be initialized during declaration 
-    int rad; 
+    double rad; 
     cout<< "Enter the radius in cm: "; 
     cin>>rad; 
-    cout<< "Area of the circle is: "<< PI * rad * rad; 
-    return 0;
+	if (rad < 0){
+	cout<< "Radius has tobe positive number"
+	}
+	else{
+    		cout<< "Area of the circle is: "<< PI * rad * rad; 
+    		return 0;
+	}
 }  
