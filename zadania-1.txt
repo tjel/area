@@ -140,7 +140,7 @@ git log
 
 
 ---------------------------------------
-14. Laczymy lokalne repozytorium ~/triangle-test ze zdalnym https://github.com/XXX/triangle-test
+15. Laczymy lokalne repozytorium ~/triangle-test ze zdalnym https://github.com/XXX/triangle-test
 
 cd ~/triangle-test
 git remote remove origin 
@@ -148,16 +148,14 @@ git remote add origin https://github.com/XXX/triangle-test.git
 git remote -v
 git push -u origin master
 
-
 ---------------------------------------
-15. Klonujemy github.com/tjel/area.git i powtarzamy pkt. 7 
+16. Klonujemy github.com/tjel/area.git i powtarzamy pkt. 7 
 
 git clone https://github.com/tjel/area.git
 cd area
 
-
 ---------------------------------------
-14. Ponownie ulepszamy kod w circle.cpp
+17. Ponownie ulepszamy kod w circle.cpp
 
 - co sie stanie gdy wpiszemy np. rad = -2 albo rad = 2.8
 - zmienic typ zmiennej 'rad' na 'double'
@@ -166,8 +164,10 @@ cd area
 git fetch && git merge
 git pull
 
+[UWAGA NA KONFLIKTY!]
+
 ---------------------------------------
-15. Rozgaleziamy projekt area-test
+18. Rozgaleziamy projekt area-test
 
 cd ~/area-test
 git branch
@@ -179,13 +179,42 @@ git status
 
 
 ---------------------------------------
-16. Integrujemy kod z pliku ~/triangle-test/triangle-test.cpp do ~/area-test/area-test.cpp
+19. Integrujemy kod z pliku ~/triangle-test/triangle-test.cpp do ~/area-test/area-test.cpp
 
 
 ---------------------------------------
-17. Scalamy galezie
+20. Scalamy galezie
 
 git branch
 git checkout master
 git merge --no-ff triangle-test
+
+---------------------------------------
+21. Przegladamy historie
+
+git log -p -2
+git log --stat
+git log --pretty=oneline
+git log --pretty=format:"%h %s" --graph
+
+---------------------------------------
+22. Dodajemy i wysylamy znaczniki do zdalnego repozytorium
+
+git tag -a v1.1 -m 'Version 1.0'
+git tag
+git show v1.0
+git tag -a 1.0 [abbreviated commit hash]
+git push origin --tags
+
+---------------------------------------
+23. Dodajemy opis w pliku README.md w formacie GitHub Flavoured Markdown oraz na stronie wiki, przegladamy statystyki
+
+
+---------------------------------------
+24. Forkujemy projekt github/tjel/penta, wprowadzamy zmiany w lokalnym repozytorium oraz dodajemy pull requests
+
+
+---------------------------------------
+25. Forkujemy inny projekt publiczny, dodajemy pull requests; dyskusja nad zmianami w kodzie
+
 
