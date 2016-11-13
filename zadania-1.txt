@@ -168,6 +168,12 @@ git pull
 [UWAGA NA KONFLIKTY!]
 
 ---------------------------------------
+
+Dyskusja roznic pomiedzy reset a revert:
+
+https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting
+
+---------------------------------------
 18. Rozgaleziamy projekt area-test
 
 cd ~/area-test
