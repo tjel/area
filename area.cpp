@@ -5,7 +5,7 @@ using namespace std;
 
 // komentarz1
 // komentarz2
-
+// rniem's comment
 int main( ) 
 { 
     float PI = 3.1415;                // variables can be initialized during declaration 
