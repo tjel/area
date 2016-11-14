@@ -20,3 +20,4 @@ int main( )
 	}
 	//komentarz na koncu
 }
+// komentarz 8
