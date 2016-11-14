@@ -25,4 +25,3 @@ int main( )
 // komentarz 8
 
 //kom9
-//kom10
