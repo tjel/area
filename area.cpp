@@ -16,4 +16,5 @@ int main( )
     else {
         cout<< "Area of the circle is: "<< PI * rad * rad << "cm\n"; 
 	}
+	//komentarz na koncu
 }
