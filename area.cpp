@@ -5,7 +5,6 @@ using namespace std;
 
 // komentarz1
 // komentarz2
-// komentarz3
 
 int main( ) 
 { 
