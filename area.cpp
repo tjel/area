@@ -19,3 +19,4 @@ int main( )
         cout<< "Area of the circle is: "<< PI * rad * rad << "cm\n"; 
 	}
 }
+// komentarz 8
