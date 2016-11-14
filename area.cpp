@@ -2,8 +2,10 @@
 # include <iostream>
 
 using namespace std;
-// dodaje komentarz
 
+// komentarz1
+// komentarz2
+// rniem's comment
 int main( ) 
 { 
     float PI = 3.1415;                // variables can be initialized during declaration 
@@ -16,4 +18,6 @@ int main( )
     else {
         cout<< "Area of the circle is: "<< PI * rad * rad << "cm\n"; // prints area of the circle 
 	}
+	//komentarz na koncu
 }
+// komentarz 8
