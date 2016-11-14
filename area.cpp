@@ -2,11 +2,10 @@
 # include <iostream>
 
 using namespace std;
-// dodaje komentarz
+
 
 int main( ) 
 { 
-    printf("Welcome to the radius calculation program.");
     float PI = 3.1415;                // variables can be initialized during declaration 
     double rad; 
     cout<< "Enter the radius in cm: \n>>"; 
