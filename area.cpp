@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// komentarz1
+// komentarz2
 
 int main( ) 
 { 
