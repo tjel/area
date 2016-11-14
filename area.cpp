@@ -2,7 +2,7 @@
 # include <iostream>
 
 using namespace std;
-
+// dodaje komentarz
 
 int main( ) 
 { 
@@ -11,7 +11,7 @@ int main( )
     double rad; 
     cout<< "Enter the radius in cm: \n>>"; 
     cin>>rad;
-    if(rad < 0) {
+    if(rad < 0) {					// Check if radius positive	
 	cout<<"Radius has to be a positive real number. Please correct your input\n";
 	}    
     else {
