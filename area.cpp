@@ -2,7 +2,7 @@
 # include <iostream>
 
 using namespace std;
-
+// dodaje komentarz
 
 int main( ) 
 { 
