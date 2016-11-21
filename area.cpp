@@ -20,7 +20,10 @@ int main( )
 	}
 }
 
+
+
 // kom4
 // komentarz 8
 
 //kom9
+
