@@ -16,9 +16,8 @@ int main( )
 	cout<<"Radius has to be a positive real number. Please correct your input\n";
 	}    
     else {
-        cout<< "Area of the circle is: "<< PI * rad * rad << "cm\n"; // prints area of the circle 
+        cout<< "Area of the circle is: "<< PI * rad * rad << "cm\n"; 
 	}
-	//komentarz na koncu
 }
 
 // kom4
