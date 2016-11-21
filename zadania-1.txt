@@ -186,7 +186,7 @@ git status
 
 
 ---------------------------------------
-19. Integrujemy kod z pliku ~/triangle-test/triangle-test.cpp do ~/area-test/area-test.cpp
+19. Integrujemy kod z pliku ~/triangle-test/triangle-test.cpp do ~/area-test/circle.cpp
 
 
 ---------------------------------------
